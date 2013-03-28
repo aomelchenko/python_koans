@@ -19,9 +19,17 @@
 #
 def triangle(a, b, c):
     # DELETE 'PASS' AND WRITE THIS CODE
-    if len(set([a, b, c])) == 3: return 'scalene'
-    elif len(set([a, b, c])) == 2: return 'isosceles'
-    else: return 'equilateral'
+    if a <= 0 or b <= 0 or c <= 0:
+	raise TriangleError
+    elif a + b <= c or a + c <= b or c + b <= a:
+	raise TriangleError
+
+    number_of_unique_sides = len(set([a, b, c]))
+    if number_of_unique_sides == 3: return 'scalene'
+    elif number_of_unique_sides == 2:
+	return 'isosceles'
+    elif number_of_unique_sides == 1:
+	return 'equilateral'
 
 
 # Error class used in part 2.  No need to change this code.
