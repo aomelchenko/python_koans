@@ -8,13 +8,18 @@ import random
 
 class DiceSet(object):
     def __init__(self):
-        self._values = None
+        self._values = []
     
     @property
     def values(self):
         return self._values
               
     def roll(self, n):
+        self._values = []
+        mygenerator = (random.randint(1, 6) for x in range(n))
+        for i in mygenerator:
+            self._values.append(random.randint(1, 6))
+        return self._values
         # Needs implementing!
         # Tip: random.randint(min, max) can be used to generate random numbers
         pass
@@ -48,7 +53,8 @@ class AboutDiceProject(Koan):
         
         dice.roll(5)
         first_time = dice.values
-        
+
+        dice = DiceSet()
         dice.roll(5)
         second_time = dice.values
         
