@@ -16,8 +16,8 @@ Class _TilesService_ allows you to get tile (image of map) from CloudMade Tile S
 
 Lets request the tile that contains the point with latitude = 47.26117 longitude = 9.59882 with zoom_level = 10
 
-<code>
-	#Example usage of CloudMade's API
+
+	\#Example usage of CloudMade's API
 	require 'cloudmade'
 	include CloudMade
 
@@ -26,21 +26,21 @@ Lets request the tile that contains the point with latitude = 47.26117 longitude
 	file = File.new('my_tile.png', 'w')
 	file.write(png)
 	file.close
-<code>
+
 
 Lets look at what each bit of code is doing here:
 
 ###1. First you should import CloudMade module
-<code>require 'cloudmade'
-<code>include CloudMade
+	require 'cloudmade'
+	include CloudMade
 
 
 The last line means you can use CloudMade module classes directly, without referencing the module name
 
 ###2. Setup connection
-<code>
+
 	cm = Client.from_parameters('Your_API_Key')
-<code>
+
 Your_API_Key - Replace this with your CloudMade API key
 
 Client class allows you to communicate with different CloudMade services, like Geocoding, Tiles etc.
