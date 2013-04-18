@@ -9,6 +9,7 @@ First of all you should sign-up for a CloudMade API key, by following this [link
 
 
 [link]: http://account.cloudmade.com/register
+<<<<<<< HEAD
 
 Get tile from CloudMade Tile Server
 =============
@@ -61,3 +62,5 @@ file = File.new('my_tile.png', 'w')
 file.write(png)
 file.close
 <code>
+=======
+>>>>>>> 4467653f5ea6935ca90af817e18534966f96a913
