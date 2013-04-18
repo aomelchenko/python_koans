@@ -1,4 +1,5 @@
 Installation and Getting Started
+=============
 
 First of all you should sign-up for a CloudMade API key, by following this [link][], if you have not done it before.
 
