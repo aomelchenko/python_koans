@@ -17,7 +17,7 @@ Class _TilesService_ allows you to get tile (image of map) from CloudMade Tile S
 Lets request the tile that contains the point with latitude = 47.26117 longitude = 9.59882 with zoom_level = 10
 
 
-	\#Example usage of CloudMade's API
+	#Example usage of CloudMade's API
 	require 'cloudmade'
 	include CloudMade
 
@@ -46,18 +46,18 @@ Your_API_Key - Replace this with your CloudMade API key
 Client class allows you to communicate with different CloudMade services, like Geocoding, Tiles etc.
 
 ###3. Get tile
-<code>
+
 	png = cm.tiles.get_tile(47.26117, 9.59882, 10)
-<code>
+
 
 _get_tile_ is a TileService's method, which returns a tile image.
 
 ###4. Save tile into file
-<code>
+
 	file = File.new('my_tile.png', 'w')
 	file.write(png)
 	file.close
-<code>
+
 =======
 
 
