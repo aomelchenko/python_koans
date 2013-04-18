@@ -18,7 +18,6 @@ Lets request the tile that contains the point with latitude = 47.26117 longitude
 
 <code>
 	#Example usage of CloudMade's API
-
 	require 'cloudmade'
 	include CloudMade
 
@@ -32,10 +31,9 @@ Lets request the tile that contains the point with latitude = 47.26117 longitude
 Lets look at what each bit of code is doing here:
 
 ###1. First you should import CloudMade module
-<code>
-	require 'cloudmade'
-	include CloudMade
-<code>
+<code>require 'cloudmade'
+<code>include CloudMade
+
 
 The last line means you can use CloudMade module classes directly, without referencing the module name
 
