@@ -1,3 +1,5 @@
+import json
+
 def jsonsumm(data):
 	pass
 	xset = []
@@ -34,3 +36,6 @@ def jsonsumm(data):
 			output.append(template)
 
 	return output
+
+def process(json_string):
+	return json.dumps(jsonsumm(json.loads(json_string)))
